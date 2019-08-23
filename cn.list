@@ -1,18 +1,14 @@
 DOMAIN-SUFFIX,cn
 DOMAIN-SUFFIX,local
 
-DOMAIN-KEYWORD,.cn.
-DOMAIN-KEYWORD,-cn.
-DOMAIN-KEYWORD,china
-DOMAIN-KEYWORD,chinese
-
+DOMAIN-SUFFIX,115.com
 DOMAIN-SUFFIX,126.net
 DOMAIN-SUFFIX,127.net
 DOMAIN-SUFFIX,163.com
+DOMAIN-SUFFIX,163yun.com
 DOMAIN-SUFFIX,1688.com
 DOMAIN-SUFFIX,10010.com
 DOMAIN-SUFFIX,95516.com
-DOMAIN-SUFFIX,163yun.com
 DOMAIN-SUFFIX,netease.com
 DOMAIN-SUFFIX,amap.com
 DOMAIN-SUFFIX,alibaba.com
@@ -22,6 +18,7 @@ DOMAIN-SUFFIX,tmall.com
 DOMAIN-SUFFIX,taobao.com
 DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,gtimg.com
+DOMAIN-SUFFIX,idqqimg.com
 DOMAIN-SUFFIX,weiyun.com
 DOMAIN-SUFFIX,tencent.com
 DOMAIN-SUFFIX,smtcdns.com
@@ -31,12 +28,15 @@ DOMAIN-SUFFIX,qcloudimg.com
 DOMAIN-SUFFIX,jd.com
 DOMAIN-SUFFIX,300hu.com
 DOMAIN-SUFFIX,360buyimg.com
+DOMAIN-SUFFIX,mipcdn.com
 DOMAIN-SUFFIX,baidu.com
 DOMAIN-SUFFIX,bdimg.com
+DOMAIN-SUFFIX,baidupan.com
 DOMAIN-SUFFIX,bcebos.com
 DOMAIN-SUFFIX,bdstatic.com
 DOMAIN-SUFFIX,hdslb.com
 DOMAIN-SUFFIX,acgvideo.com
+DOMAIN-SUFFIX,biliapi.net
 DOMAIN-SUFFIX,bilibili.com
 DOMAIN-SUFFIX,douban.com
 DOMAIN-SUFFIX,doubanio.com
@@ -84,25 +84,21 @@ DOMAIN-SUFFIX,miaopai.com
 DOMAIN-SUFFIX,tianyaui.com
 DOMAIN-SUFFIX,xunlei.com
 DOMAIN-SUFFIX,cn.bing.com
-DOMAIN-SUFFIX,cdn-apple.com
 DOMAIN-SUFFIX,meitudata.com
 DOMAIN-SUFFIX,ruanmei.com
 DOMAIN-SUFFIX,coding.net
 DOMAIN-SUFFIX,loli.net
-DOMAIN-SUFFIX,mozilla.net
-DOMAIN-SUFFIX,mozilla.org
 DOMAIN-SUFFIX,ipsw.me
 DOMAIN-SUFFIX,ibeta.me
 DOMAIN-SUFFIX,lncld.net
-DOMAIN-SUFFIX,avoscloud.com
+DOMAIN-SUFFIX,lncldglobal.com
 DOMAIN-SUFFIX,runoob.com
 DOMAIN-SUFFIX,gitee.com
-DOMAIN-SUFFIX,www.apple.com
-DOMAIN-SUFFIX,www.microsoft.com
 DOMAIN-SUFFIX,yinxiang.com
 DOMAIN-SUFFIX,evernote.com
 DOMAIN-SUFFIX,captora.com
 DOMAIN-SUFFIX,meituan.net
+DOMAIN-SUFFIX,dpfile.com
 DOMAIN-SUFFIX,dianping.com
 DOMAIN-SUFFIX,ixigua.com
 DOMAIN-SUFFIX,suning.com
@@ -124,10 +120,27 @@ DOMAIN-SUFFIX,toutiao.com
 DOMAIN-SUFFIX,pstatp.com
 DOMAIN-SUFFIX,youdao.com
 DOMAIN-SUFFIX,ydstatic.com
+DOMAIN-SUFFIX,cordcloud.org
+DOMAIN-SUFFIX,rr.tv
+DOMAIN-SUFFIX,lanzous.com
+DOMAIN-SUFFIX,openinstall.io
+DOMAIN-SUFFIX,cloudfront.net
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,adguard.com
+DOMAIN-SUFFIX,bootcss.com
+DOMAIN-SUFFIX,lizhi.io
+DOMAIN-SUFFIX,huya.com
+DOMAIN-SUFFIX,pcbeta.com
+DOMAIN-SUFFIX,qiniu.com
+DOMAIN-SUFFIX,sm.ms
+DOMAIN-SUFFIX,cnblogs.com
+DOMAIN-SUFFIX,jandan.net
+DOMAIN-SUFFIX,yinyuetai.com
+DOMAIN-SUFFIX,kuaidi100.com
 
-DOMAIN,iosapps.itunes.apple.com
-
-URL-REGEX,"^http:\/\/[\s\S]*\/cn\/"
-URL-REGEX,"^http:\/\/cn\.[\s\S]*\/"
+OR,((DOMAIN-KEYWORD,.cn.), (DOMAIN-KEYWORD,-cn.))
+OR,((DOMAIN-KEYWORD,china), (DOMAIN-KEYWORD,chinese))
 
 AND,((IP-CIDR,0.0.0.0/0,no-resolve), (RULE-SET,LAN))
+
+URL-REGEX,(torrent|\.torrent|peer_id=|info_hash|get_peers|find_node|BitTorrent|announce_peer|protocol|announce\.php\?passkey=)
