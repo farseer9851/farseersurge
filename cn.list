@@ -31,6 +31,7 @@ DOMAIN-SUFFIX,360buyimg.com
 DOMAIN-SUFFIX,mipcdn.com
 DOMAIN-SUFFIX,baidu.com
 DOMAIN-SUFFIX,bdimg.com
+DOMAIN-SUFFIX,baidupcs.com
 DOMAIN-SUFFIX,baidupan.com
 DOMAIN-SUFFIX,bcebos.com
 DOMAIN-SUFFIX,bdstatic.com
@@ -126,7 +127,6 @@ DOMAIN-SUFFIX,lanzous.com
 DOMAIN-SUFFIX,openinstall.io
 DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-SUFFIX,cloudflare.com
-DOMAIN-SUFFIX,adguard.com
 DOMAIN-SUFFIX,bootcss.com
 DOMAIN-SUFFIX,lizhi.io
 DOMAIN-SUFFIX,huya.com
@@ -137,9 +137,14 @@ DOMAIN-SUFFIX,cnblogs.com
 DOMAIN-SUFFIX,jandan.net
 DOMAIN-SUFFIX,yinyuetai.com
 DOMAIN-SUFFIX,kuaidi100.com
+DOMAIN-SUFFIX,guokr.com
 
-OR,((DOMAIN-KEYWORD,.cn.), (DOMAIN-KEYWORD,-cn.))
-OR,((DOMAIN-KEYWORD,china), (DOMAIN-KEYWORD,chinese))
+// Misc
+DOMAIN,www.gstatic.com
+DOMAIN,www.microsoft.com
+DOMAIN,ssl.gstatic.com
+DOMAIN,cdn.ampproject.org
+DOMAIN,safebrowsing.googleapis.com
 
 AND,((IP-CIDR,0.0.0.0/0,no-resolve), (RULE-SET,LAN))
 
