@@ -138,9 +138,10 @@ DOMAIN-SUFFIX,jandan.net
 DOMAIN-SUFFIX,yinyuetai.com
 DOMAIN-SUFFIX,kuaidi100.com
 DOMAIN-SUFFIX,guokr.com
+DOMAIN-SUFFIX,adguard.com
 
 // Misc
-DOMAIN,www.gstatic.com
+DOMAIN-SUFFIX,gstatic.com
 DOMAIN,www.microsoft.com
 DOMAIN,ssl.gstatic.com
 DOMAIN,cdn.ampproject.org
