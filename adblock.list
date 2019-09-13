@@ -5,6 +5,7 @@ DOMAIN,mi.gdt.qq.com
 DOMAIN,livew.l.qq.com
 DOMAIN,net.rayjump.com
 DOMAIN,report.adview.cn
+DOMAIN,mf.atm.youku.com
 DOMAIN,agn.aty.sohu.com
 DOMAIN,mobads.baidu.com
 DOMAIN,video.c-ctrip.com
@@ -18,6 +19,36 @@ DOMAIN,map-mobile-opnimg.cdn.bcebos.com
 DOMAIN-SUFFIX,ads.sohu.com
 DOMAIN-SUFFIX,g.doubleclick.net
 
+// 中国联通
+URL-REGEX,"^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm$"
+
+// 中国移动
+URL-REGEX,"^https?:\/\/clientaccess\.10086\.cn\/biz-orange\/DN\/init\/startInit$"
+
+// 中国电信
+URL-REGEX,"^http:\/\/image1\.chinatelecom-ec\.com\/images\/.*\/client\w+\.jpg$"
+
+// 工商银行
+URL-REGEX,"http:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/"
+
+// 招商银行
+URL-REGEX,"^https?:\/\/pic1cdn\.cmbchina\.com\/appinitads\/"
+
+// 发现精彩(广发银行)
+URL-REGEX,"^http:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/\d+\.(jpg|png)$"
+
+// 动卡空间(中信银行)
+URL-REGEX,"^https?:\/\/m\.creditcard\.ecitic\.com\/.*\/appStartAdv$"
+
+// 缤纷生活(中国银行)
+URL-REGEX,"^https?:\/\/mlife\.jf365\.boc\.cn\/AppPrj\/FirstPic\.do"
+
+// 掌上生活(招商银行)
+URL-REGEX,"^https?:\/\/mlife\.cmbchina\.com\/ClientFaceService\/preCacheAdvertise\.json$"
+
+// 买单吧(交通银行)
+URL-REGEX,"^https?:\/\/creditcardapp\.bankcomm\.com\/mapp\/common\/queryGuidePageAds\.do$"
+
 // 腾讯新闻
 OR,((DOMAIN,news.l.qq.com), (DOMAIN,news.ssp.qq.com))
 
@@ -26,8 +57,8 @@ URL-REGEX,"^http:\/\/[\s\S]*\/.+\.tc\.qq\.com/.*\.mp4"
 
 // QQ音乐
 URL-REGEX,"^http:\/\/[\s\S]*\/website\/.*\.jpg"
+URL-REGEX,"^https?:\/\/y\.gtimg\.cn\/music\/.*x1\d{2}"
 URL-REGEX,"^https?:\/\/y\.gtimg\.cn\/music\/.*_Ad/\d+\.png$"
-URL-REGEX,"^http:\/\/[\s\S]*\/music\/photo_new\/T017R.*\.png$"
 
 // 企鹅电竞
 URL-REGEX,"^http:\/\/shp\.qpic\.cn\/pggamehead\/.*h=\d{4}$"
@@ -70,7 +101,7 @@ URL-REGEX,"^https?:\/\/cube\.elemecdn\.com\/.*h_\d{4}\/"
 URL-REGEX,"^https?:\/\/cube\.elemecdn\.com\/.*\.mp4\?$"
 
 // 猫眼电影
-URL-REGEX,"^http:\/\/p\d.meituan.net\/movie\/.*may_covertWebp$"
+URL-REGEX,"^http:\/\/p\d.meituan.net\/movie\/.*\?may_covertWebp$"
 
 // 美团外卖
 URL-REGEX,"^http:\/\/p\d\.meituan\.net\/wmbanner\/"
@@ -177,41 +208,18 @@ URL-REGEX,"^https?:\/\/api\.gotokeep\.com\/ads\/"
 // 咪咕视频
 URL-REGEX,"^http:\/\/ggx\.cmvideo\.cn\/request\/"
 
-// 中国联通
-URL-REGEX,"^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/accountListData\.htm$"
-
-// 中国移动
-URL-REGEX,"^https?:\/\/clientaccess\.10086\.cn\/biz-orange\/DN\/init\/startInit$"
-
-// 中国电信
-URL-REGEX,"^http:\/\/image1\.chinatelecom-ec\.com\/images\/.*\/client\w+\.jpg$"
-
-// 工商银行
-URL-REGEX,"http:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/"
-
-// 招商银行
-URL-REGEX,"^https?:\/\/pic1cdn\.cmbchina\.com\/appinitads\/"
-
-// 发现精彩(广发银行)
-URL-REGEX,"^http:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/\d+\.(jpg|png)$"
-
-// 动卡空间(中信银行)
-URL-REGEX,"^https?:\/\/m\.creditcard\.ecitic\.com\/.*\/appStartAdv$"
-
-// 缤纷生活(中国银行)
-URL-REGEX,"^https?:\/\/mlife\.jf365\.boc\.cn\/AppPrj\/FirstPic\.do"
-
-// 掌上生活(招商银行)
-URL-REGEX,"^https?:\/\/mlife\.cmbchina\.com\/ClientFaceService\/preCacheAdvertise\.json$"
-
-// 买单吧(交通银行)
-URL-REGEX,"^https?:\/\/creditcardapp\.bankcomm\.com\/mapp\/common\/queryGuidePageAds\.do$"
-
 // 有道翻译官
 URL-REGEX,"^http:\/\/oral\.youdao\.com\/oral\/adInfo"
+URL-REGEX,"^http:\/\/impservice\.dictapp\.youdao\.com\/imp\/request"
 
 // 58同城
 URL-REGEX,"^https?:\/\/app\.58\.com\/api\/home\/appadv\/"
 
 // 芒果视频
 OR,((DOMAIN,mobile.da.mgtv.com), (DOMAIN,mobile2.da.mgtv.com))
+
+// 毒
+URL-REGEX,"^https?://du\.hupucdn\.com\/\w+h\d{4}"
+
+// 拼多多
+URL-REGEX,"^http:\/\/api\.yangkeduo\.com\/api\/cappuccino\/splash"
