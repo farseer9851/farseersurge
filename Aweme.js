@@ -1,34 +1,58 @@
-let result = $response.body;
-function replaceAll(str, find, replace) {
-  return str.replace(new RegExp(find, 'g'), replace);
+/*
+[URL Rewrite]
+^https://aweme-eagle(.*)\.snssdk\.com/aweme/v2/ https://aweme-eagle$1.snssdk.com/aweme/v1/ 302
+[Script]
+http-response ^https://[\s\S]*\/aweme/v1/(feed|aweme/post|follow/feed)/ requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/Aweme.js
+[MITM]
+hostname = *.amemv.com, *.snssdk.com
+*/
+
+let arr = {
+  "allow_download": true,
+  "share_type": 0,
+  "show_progress_bar": 0,
+  "draft_progress_bar": 0,
+  "allow_duet": true,
+  "allow_react": true,
+  "prevent_download_type": 2,
+  "allow_dynamic_wallpaper": false
+};
+let body = $response.body.replace(/watermark=1/g, "watermark=0");
+var obj = JSON.parse(body);
+if (obj.aweme_list) {
+  for (var i = obj.aweme_list.length - 1; i >= 0; i--) {
+    if (obj.aweme_list[i].raw_ad_data) {
+      obj.aweme_list.splice(i, 1);
+    }
+    if (obj.aweme_list[i].poi_info) {
+      delete obj.aweme_list[i].poi_info;
+    }
+    if (obj.aweme_list[i].sticker_detail) {
+      delete obj.aweme_list[i].sticker_detail;
+    }
+    if (obj.aweme_list[i].simple_promotions) {
+      delete obj.aweme_list[i].simple_promotions;
+    }
+    obj.aweme_list[i].status.reviewed = 1;
+    obj.aweme_list[i].video_control = arr;
+  }
+  $done({body: JSON.stringify(obj)});
+} else if (obj.data) {
+  for (var i = obj.data.length - 1; i >= 0; i--) {
+    if (obj.data[i].aweme) {
+      if (obj.data[i].aweme.poi_info) {
+        delete obj.data[i].aweme.poi_info;
+      }
+      if (obj.data[i].aweme.simple_promotions) {
+        delete obj.data[i].aweme.simple_promotions;
+      }
+      obj.data[i].aweme.status.reviewed = 1;
+      obj.data[i].aweme.video_control = arr;
+    } else {
+      obj.data.splice(i, 1);
+    }
+  }
+  $done({body: JSON.stringify(obj)});
+} else {
+  $done({body});
 }
-var keyword = ['watermark=1'];
-keyword.forEach(function(k) {
-  result = replaceAll(result, k, 'watermark=0');
-});
-body = JSON.parse(result);
-if(result.indexOf('aweme_list') != -1){
-  body.aweme_list.forEach((element, index)=>{
-    if(element.hasOwnProperty('raw_ad_data')){      
-      body.aweme_list.splice(index, 1);
-    }
-  });
-  body.aweme_list.forEach((element, index)=>{
-    if(element.hasOwnProperty('simple_promotions')){      
-      delete body.aweme_list[index].simple_promotions;
-    }
-  });
-  body.aweme_list.forEach((element, index) => {
-    if (element['interaction_stickers'] !== null) {
-      body.aweme_list[index].interaction_stickers = null;
-    }
-  });
-  body.aweme_list.forEach((element, index) => {
-    if (element['prevent_download'] === true) {
-      body.aweme_list[index].status.reviewed = 1;
-      body.aweme_list[index].prevent_download = false;
-    }
-  });
-}
-body = JSON.stringify(body);
-$done({body});
