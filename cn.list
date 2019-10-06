@@ -101,6 +101,7 @@ DOMAIN-SUFFIX,dianping.com
 # Alibaba
 DOMAIN-SUFFIX,1688.com
 DOMAIN-SUFFIX,amap.com
+DOMAIN-SUFFIX,aliapp.org
 DOMAIN-SUFFIX,alibaba.com
 DOMAIN-SUFFIX,alicdn.com
 DOMAIN-SUFFIX,alipay.com
@@ -149,6 +150,7 @@ DOMAIN-SUFFIX,ydstatic.com
 # Tencent
 DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,gtimg.com
+DOMAIN-SUFFIX,txfund.com
 DOMAIN-SUFFIX,tenpay.com
 DOMAIN-SUFFIX,idqqimg.com
 DOMAIN-SUFFIX,weiyun.com
