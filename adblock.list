@@ -36,6 +36,9 @@ URL-REGEX,"http:\/\/v\.icbc\.com\.cn\/userfiles\/Resources\/WAP\/advertisement\/
 # 招商银行
 URL-REGEX,"^https?:\/\/pic1cdn\.cmbchina\.com\/appinitads\/"
 
+# 江苏银行
+URL-REGEX,"^https?:\/\/mbank5\.jsbchina\.cn\/mbank\/common\/startupPageActive\.do$"
+
 # 发现精彩(广发银行)
 URL-REGEX,"^http:\/\/mps\.95508\.com\/mps\/club\/cardPortals\/adv\/\d+\.(jpg|png)$"
 
@@ -46,7 +49,7 @@ URL-REGEX,"^https?:\/\/m\.creditcard\.ecitic\.com\/.*\/appStartAdv$"
 URL-REGEX,"^https?:\/\/mlife\.jf365\.boc\.cn\/AppPrj\/FirstPic\.do"
 
 # 掌上生活(招商银行)
-URL-REGEX,"^https?:\/\/mlife\.cmbchina\.com\/ClientFaceService\/preCacheAdvertise\.json$"
+URL-REGEX,"^https?:\/\/mlife\.cmbchina\.com\/ClientFaceService\/.*Advertise.*\.json$"
 
 # 买单吧(交通银行)
 URL-REGEX,"^https?:\/\/creditcardapp\.bankcomm\.com\/mapp\/common\/queryGuidePageAds\.do$"
@@ -102,7 +105,7 @@ URL-REGEX,"^https?:\/\/cube\.elemecdn\.com\/.*\.mp4\?$"
 URL-REGEX,"^http:\/\/p\d.meituan.net\/movie\/.*\?may_covertWebp$"
 
 # 美团外卖
-URL-REGEX,"^http:\/\/p\d\.meituan\.net\/wmbanner\/"
+URL-REGEX,"^http:\/\/p\d\.meituan\.net\/(wmbanner|bizad)\/"
 
 # 美团
 URL-REGEX,"^https?:\/\/s3plus\.meituan\.net\/v1\/mss_a002"
@@ -243,3 +246,6 @@ URL-REGEX,"^https?:\/\/[a-z]*\.rsscc\.com\/trainact\/adver\/"
 
 # 虾米音乐
 URL-REGEX,"^http:\/\/pic\.xiami\.net\/images\/common\/uploadpic\/.*\.jpg$"
+
+# 江苏移动
+URL-REGEX,"^http:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v1\/market_content\.page\.query$"
