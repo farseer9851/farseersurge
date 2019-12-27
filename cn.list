@@ -45,6 +45,7 @@ DOMAIN-SUFFIX,adguard.com
 DOMAIN-SUFFIX,huanqiu.com
 DOMAIN-SUFFIX,oschina.net
 DOMAIN-SUFFIX,cmbchina.com
+DOMAIN-SUFFIX,magi.com
 
 DOMAIN-SUFFIX,cn
 DOMAIN-SUFFIX,local
@@ -97,6 +98,13 @@ DOMAIN-SUFFIX,tuchong.com
 
 DOMAIN-SUFFIX,meituan.net
 DOMAIN-SUFFIX,dianping.com
+
+# Apple
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,apple-mapkit.com
+DOMAIN-SUFFIX,icloud-content.com
 
 # Alibaba
 DOMAIN-SUFFIX,1688.com
