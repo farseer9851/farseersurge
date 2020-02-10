@@ -82,9 +82,6 @@ URL-REGEX,"^http:\/\/[\s\S]*\/c\/s\/splashSchedule$"
 # 淘宝
 URL-REGEX,"^https?:\/\/heic\.alicdn\.com\/.*\.jpg_(9\d{2}|\d{4})"
 IP-CIDR,203.119.144.0/23,no-resolve
-IP-CIDR,203.119.175.0/24,no-resolve
-
-IP-CIDR,47.102.83.0/24,no-resolve
 
 # 飞猪
 URL-REGEX,"^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/"
