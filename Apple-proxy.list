@@ -1,4 +1,8 @@
-DOMAIN,ocsp.apple.com
+# Apple
+DOMAIN,ocvideo.apple.com
+DOMAIN-SUFFIX,iadsdk.apple.com
+DOMAIN-KEYWORD,buy.itunes.apple.com
+
 DOMAIN-SUFFIX,digicert.com
 DOMAIN-SUFFIX,entrust.net
 DOMAIN,ocsp.verisign.net
