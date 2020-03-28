@@ -81,7 +81,11 @@ URL-REGEX,"^http:\/\/[\s\S]*\/c\/s\/splashSchedule$"
 
 # 淘宝
 URL-REGEX,"^https?:\/\/heic\.alicdn\.com\/.*\.jpg_(9\d{2}|\d{4})"
-IP-CIDR,203.119.144.0/21,no-resolve
+URL-REGEX,^https?+:\/\/heic\.alicdn\.com\/tps\/i4\/.+?\.jpg_1200x1200q90\.jpg_\.heic$
+URL-REGEX,^https?+:\/\/gw\.alicdn\.com\/tfs\/.+?\d{4}-\d{4}\/[a-z]{3}$
+
+# >> 闲鱼
+URL-REGEX,^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome\/
 
 # 飞猪
 URL-REGEX,"^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/"
@@ -235,8 +239,7 @@ URL-REGEX,"^https?:\/\/m\.ctrip\.com\/restapi\/.*Ads"
 URL-REGEX,"^http:\/\/pic\.xiami\.net\/images\/common\/uploadpic\/.*\.jpg$"
 
 # 江苏移动
-# URL-REGEX,"^http:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query$"
-URL-REGEX,^https?+:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query
+URL-REGEX,"^http:\/\/wap\.js\.10086\.cn\/jsmccClient\/cd\/market_content\/api\/v\d\/market_content\.page\.query$"
 
 # 看理想
 URL-REGEX,"^https?:\/\/api\.vistopia\.com\.cn\/api\/v\d\/home\/advertisement"
