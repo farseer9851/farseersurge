@@ -1,16 +1,16 @@
-DOMAIN,safebrowsing.urlsec.qq.com
-DOMAIN,safebrowsing.googleapis.com
-USER-AGENT,AppStore*,DIRECT
-DOMAIN-SUFFIX,mzstatic.com
+# Apple_CDN.list
+# > App Store
+USER-AGENT,com.apple.appstored*
 PROCESS-NAME,storedownloadd
-USER-AGENT,cloudd*
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN,iosapps.itunes.apple.com
+DOMAIN,osxapps.itunes.apple.com
+# > Update
+DOMAIN,supportdownload.apple.com
+DOMAIN,appldnld.apple.com
+DOMAIN,swcdn.apple.com
+DOMAIN,apptrailers.itunes.apple.com
+DOMAIN,updates-http.cdn-apple.com
+
+
 AND,((NOT,((USER-AGENT,*com.apple.WebKit*))),(USER-AGENT,*com.apple.*))
-DOMAIN-SUFFIX,music.apple.com,force-remote-dns
-DOMAIN-SUFFIX,icloud.com
-DOMAIN-SUFFIX,icloud-content.com
-DOMAIN-SUFFIX,me.com
-DOMAIN-SUFFIX,akadns.net
-DOMAIN-SUFFIX,aaplimg.com
-DOMAIN-SUFFIX,cdn-apple.com
-DOMAIN-SUFFIX,apple.com
-DOMAIN-SUFFIX,apple-cloudkit.com
