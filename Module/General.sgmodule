@@ -4,8 +4,9 @@
 [General]
 // General
 loglevel = notify
-internet-test-url = http://www.bing.com/
-proxy-test-url = http://www.gstatic.com/generate_204
+internet-test-url = http://www.aliyun.com
+proxy-test-url = http://cp.cloudflare.com/generate_204
+
 test-timeout = 3
 ipv6 = true
 external-controller-access = farseer@127.0.0.1:6170
