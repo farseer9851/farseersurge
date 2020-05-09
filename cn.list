@@ -188,6 +188,7 @@ DOMAIN-SUFFIX,qcloud.com
 DOMAIN-SUFFIX,myqcloud.com
 DOMAIN-SUFFIX,qcloudimg.com
 DOMAIN-SUFFIX,weixinbridge.com
+IP-CIDR,182.254.116.0/24
 
 # Xiaomi
 DOMAIN-SUFFIX,mi.com
