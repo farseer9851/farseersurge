@@ -1,18 +1,9 @@
-#!name=General Module
-#!desc=基础配置
+#!name=clarity 解锁
+#!desc=测试
 
-[General]
-// General
-loglevel = notify
-internet-test-url = http://www.aliyun.com
-proxy-test-url = http://cp.cloudflare.com/generate_204
+[Script]
+# > clarity
+http-response ^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll) requires-body=1,max-size=262144,script-path=clarity.js
 
-test-timeout = 3
-ipv6 = true
-external-controller-access = farseer@127.0.0.1:6170
-allow-wifi-access = true
-exclude-simple-hostnames = true
-http-listen = 0.0.0.0:8888
-socks5-listen = 0.0.0.0:8889
-wifi-access-socks5-port = 8889
-wifi-access-http-port = 8888
+[MITM]
+hostname = %APPEND% claritywallpaper.com
