@@ -4,6 +4,7 @@ USER-AGENT,com.apple.appstored*
 USER-AGENT,com.apple.news*
 USER-AGENT,TestFlight*
 DOMAIN,apple.comscoreresearch.com
+DOMAIN,ocsp.apple.com
 DOMAIN-SUFFIX,aaplimg.com
 DOMAIN-SUFFIX,apple.co
 DOMAIN-SUFFIX,apple.com
