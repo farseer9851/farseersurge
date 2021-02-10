@@ -2,8 +2,9 @@
 #!desc=Local DNS Mapping.
 
 [Host]
-# Update time: 2020.10.19
-# 本地 DNS 映射记录
+ip6-localhost = ::1
+ip6-loopback = ::1
+
 # > 淘宝
 *.taobao.com = server:223.5.5.5
 # > 天猫
@@ -57,4 +58,4 @@ hdslb.com = server:119.29.29.29
 # kinghong
 *.kingkong.com.tw = server:https://i.233py.com/dns-query
 # > Github
-*github* = server:https://i.233py.com/dns-query
+#*github* = server:https://i.233py.com/dns-query
