@@ -54,6 +54,7 @@ cdn.pcbeta.css.inimc.com = 36.27.212.81
 *.upyun.com = server:223.6.6.6
 *.mmstat.com = server:223.6.6.6
 hdslb.com = server:119.29.29.29
+mtalk.google.com = 108.177.125.188
 
 # kinghong
 *.kingkong.com.tw = server:https://i.233py.com/dns-query
