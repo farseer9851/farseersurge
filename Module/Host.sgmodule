@@ -58,5 +58,4 @@ mtalk.google.com = 108.177.125.188
 
 # kinghong
 *.kingkong.com.tw = server:https://i.233py.com/dns-query
-# > Github
-#*github* = server:https://i.233py.com/dns-query
+
