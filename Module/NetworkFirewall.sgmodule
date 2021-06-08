@@ -3,8 +3,8 @@
 #!system=ios
 
 [Script]
-防火墙(规则) = type=rule,script-path=https://gist.githubusercontent.com/NobyDa/af8bab8cab062d77ae61646c670bc992/raw/Timed-Firewall.js
-防火墙(事件) = type=event,event-name=network-changed,script-path=https://gist.githubusercontent.com/NobyDa/e1f82ee2aa21c3958d8a7ce69ac27827/raw/WiFi-Firewall.js
+防火墙(规则) = type=rule,script-path=https://raw.githubusercontent.com/farseer9851/farseersurge/master/JS/Timed-Firewall.js
+防火墙(事件) = type=event,event-name=network-changed,script-path=https://raw.githubusercontent.com/farseer9851/farseersurge/master/JS/WiFi-Firewall.js
 
 [Rule]
 AND,((NOT,((OR,((USER-AGENT,Surge*), (RULE-SET,https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list))))), (SCRIPT,防火墙(规则))),REJECT-TINYGIF
