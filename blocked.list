@@ -48,16 +48,6 @@ AND,((DOMAIN-KEYWORD,amazon), (DOMAIN-SUFFIX,com))
 AND,((DOMAIN-KEYWORD,github), (DOMAIN-SUFFIX,com))
 AND,((DOMAIN-KEYWORD,dropbox), (DOMAIN-SUFFIX,com))
 
-# Netflix
-USER-AGENT,Argo*
-DOMAIN-SUFFIX,netflix.com
-DOMAIN-SUFFIX,netflix.net
-DOMAIN-SUFFIX,nflxext.com
-DOMAIN-SUFFIX,nflximg.com
-DOMAIN-SUFFIX,nflximg.net
-DOMAIN-SUFFIX,nflxso.net
-DOMAIN-SUFFIX,nflxvideo.net
-
 # eBay
 DOMAIN-SUFFIX,ebay.com
 DOMAIN-SUFFIX,ebay-us.com
@@ -151,12 +141,6 @@ DOMAIN-SUFFIX,freegeoip.net
 DOMAIN-SUFFIX,trello.com
 DOMAIN-SUFFIX,trellocdn.com
 
-# Twitch
-DOMAIN-SUFFIX,twitch.tv
-DOMAIN-SUFFIX,jtvnw.net
-DOMAIN-SUFFIX,ttvnw.net
-DOMAIN-SUFFIX,twitchsvc.net
-
 # Twitter
 DOMAIN-SUFFIX,twimg.com
 DOMAIN-SUFFIX,twitter.com
@@ -192,11 +176,6 @@ DOMAIN-SUFFIX,paypalobjects.com
 # Xvideo
 DOMAIN-SUFFIX,xvideos.com
 DOMAIN-SUFFIX,xvideos-cdn.com
-
-# PornHub
-DOMAIN-SUFFIX,phncdn.com
-DOMAIN-SUFFIX,pornhub.com
-DOMAIN-SUFFIX,pornhubpremium.com
 
 # NYTimes
 DOMAIN-SUFFIX,nyt.com
