@@ -15,18 +15,18 @@ DOMAIN,adshows.21cn.com
 
 
 DOMAIN,adxserver.ad.cmvideo.cn
-DOMAIN,app-ad.variflight.com
+
 DOMAIN,applog.mobike.com
-DOMAIN,appnext.hs.llnwd.net
-DOMAIN,ggs.myzaker.com
+
+
 DOMAIN,log.b612kaji.com
 DOMAIN,log.star.ele.me
 DOMAIN,log.umsns.com
 DOMAIN,log.voicecloud.cn
 DOMAIN,log.ys7.com
 DOMAIN,logs.chelaile.net.cn
-DOMAIN,mopnativeadv.037201.com
-DOMAIN,nativeadv.dftoutiao.com
+
+
 DOMAIN,report.jpush.cn
 DOMAIN,s0.2mdn.net
 DOMAIN,stat.loli.net
@@ -49,17 +49,16 @@ DOMAIN-SUFFIX,1391.com
 DOMAIN-SUFFIX,3lift.com
 DOMAIN-SUFFIX,51.la
 DOMAIN-SUFFIX,56txs4.com
-DOMAIN-SUFFIX,ad.daum.net
+
 DOMAIN-SUFFIX,ad373.com
-DOMAIN-SUFFIX,adcolony.com
+
 DOMAIN-SUFFIX,adform.net
-DOMAIN-SUFFIX,adinall.com
+
 DOMAIN-SUFFIX,adkmob.com
 DOMAIN-SUFFIX,adlefee.com
 DOMAIN-SUFFIX,admarvel.com
 DOMAIN-SUFFIX,admaster.com.cn
-DOMAIN-SUFFIX,admob.com
-DOMAIN-SUFFIX,adnxs.com
+
 DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,ads.adaptv.advertising.com
 DOMAIN-SUFFIX,ads.adaptv.advertising.com
@@ -79,10 +78,10 @@ DOMAIN-SUFFIX,alipaylog.com
 DOMAIN-SUFFIX,amazon-adsystem.com
 DOMAIN-SUFFIX,analysys.cn
 DOMAIN-SUFFIX,api.appsee.com
-DOMAIN-SUFFIX,app-adforce.jp
+
 DOMAIN-SUFFIX,app-measurement.com
 DOMAIN-SUFFIX,appboy.com
-DOMAIN-SUFFIX,appier.net
+
 DOMAIN-SUFFIX,appnext.com
 DOMAIN-SUFFIX,appsflyer.com
 DOMAIN-SUFFIX,apptentive.com
@@ -95,7 +94,7 @@ DOMAIN-SUFFIX,cappumedia.com
 DOMAIN-SUFFIX,cferw.com
 DOMAIN-SUFFIX,chartbeat.net
 DOMAIN-SUFFIX,clickhubs.com
-DOMAIN-SUFFIX,cloudmobi.net
+
 DOMAIN-SUFFIX,cnadnet.com
 DOMAIN-SUFFIX,cnzz.com
 DOMAIN-SUFFIX,cocounion.com
