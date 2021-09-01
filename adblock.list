@@ -1,23 +1,19 @@
 # --- AD Block ---
 
 # >> General
-DOMAIN,abema-adx.ameba.jp
-DOMAIN,ad-cn.jovcloud.com
+
+
 DOMAIN,ad.10010.com
-DOMAIN,ad.12306.cn
-DOMAIN,ad.caiyunapp.com
-DOMAIN,ad.huajiao.com
-DOMAIN,ad.hzyoka.com
-DOMAIN,ad.jiemian.com
-DOMAIN,ad.qingting.fm
+
+
+
+
 DOMAIN,adfile.wifi8.com
 DOMAIN,adnew.wifi8.com
-DOMAIN,adsapi.manhuaren.com
-DOMAIN,adsdk.dmzj.com
-DOMAIN,adshow.58.com
+
 DOMAIN,adshows.21cn.com
-DOMAIN,adui.tg.meitu.com
-DOMAIN,adx.hupu.com
+
+
 DOMAIN,adxserver.ad.cmvideo.cn
 DOMAIN,app-ad.variflight.com
 DOMAIN,applog.mobike.com
@@ -274,10 +270,6 @@ DOMAIN,wgo.mmstat.com
 DOMAIN,wmlog.meituan.com
 DOMAIN,zz.bdstatic.com
 
-# >> Baicizhan
-DOMAIN,advertise.baicizhan.org
-DOMAIN,advertise.baicizhan.com
-
 
 # >> Bilibili
 
@@ -292,8 +284,6 @@ URL-REGEX,^https:\/\/img-ys011\.didistatic\.com\/static\/ad_oss\/image-\d{4}-\d{
 DOMAIN,log.star.ele.me
 
 # >> HunanTV
-DOMAIN-SUFFIX,da.mgtv.com
-DOMAIN-SUFFIX,da.hunantv.com
 DOMAIN-SUFFIX,log.hunantv.com
 DOMAIN,log.v2.hunantv.com
 DOMAIN,v2.log.hunantv.com
@@ -320,8 +310,6 @@ DOMAIN,imgad0.pcauto.com.cn
 DOMAIN,imgad0.pconline.com.cn
 DOMAIN,ivy.pchouse.com.cn
 
-# >> JD
-URL-REGEX,^http:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$
 
 # >> Tencent
 DOMAIN-SUFFIX,bugly.qq.com
@@ -373,9 +361,6 @@ DOMAIN,v3-dc-ad.ixigua.com
 DOMAIN,v6-dc-ad.ixigua.com
 DOMAIN,v9-dc-ad.ixigua.com
 
-# >> Xuneli
-DOMAIN,adsp.xunlei.com
-DOMAIN,etl.xlmc.sandai.net
  
 
 # --- Blacklist ---
