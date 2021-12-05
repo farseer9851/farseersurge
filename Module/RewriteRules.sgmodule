@@ -1,5 +1,5 @@
 #!name=复写去广告(严格版)
-#!desc=最后更新时间 2021-11-25 17:44:09
+#!desc=最后更新时间 2021-12-04 02:10:32
 #!author=blackmatrix7
 #!repo=https://github.com/blackmatrix7/ios_rule_script
 #!rewrite=713
@@ -11,9 +11,9 @@
 force-http-engine-hosts = %APPEND% *.cp31.ott.cibntv.net,*.ott.cibntv.net,119.79*,124.14*,124.193*,211.162*,220.112*,intl.iqiyi.com,maicai.api.ddxq.mobi,mobileapi-v6.elong.com,weibointl.api.weibo.cn,wmapi.meituan.com
 
 [Rule]
-DOMAIN,api.cupid.dns.iqiyi.com,None
-DOMAIN,video-ad.sm.cn,None
-DOMAIN-SUFFIX,cupid.iqiyi.com,None
+DOMAIN,api.cupid.dns.iqiyi.com,REJECT
+DOMAIN,video-ad.sm.cn,REJECT
+DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
 
 [URL Rewrite]
 ^https?:\/\/(?>heic|gw)\.alicdn\.com\/tfs\/TB1.+?-\d{4}-\d{4}\.jpg_1200x1200q90\.jpg_\.\w{3,4}+$ - reject
