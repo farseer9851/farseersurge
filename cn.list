@@ -1,19 +1,27 @@
-# China Apps
-# USER-AGENT,MicroMessenger Client
-# USER-AGENT,WeChat*
-# USER-AGENT,MApi* // Dianping
-# Ali
-DOMAIN-KEYWORD,alipay
-DOMAIN-KEYWORD,taobao
-DOMAIN-KEYWORD,alicdn
-DOMAIN-KEYWORD,aliyun
-DOMAIN-KEYWORD,.tmall.
-IP-CIDR,198.11.188.0/25,no-resolve
-IP-CIDR,198.11.136.0/24,no-resolve
-USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*
-# China
-DOMAIN-SUFFIX,CN
-DOMAIN-KEYWORD,baidu
+# > General
+DOMAIN,app.adjust.com
+DOMAIN,bdtj.tagtic.cn
+# > Alibaba
+DOMAIN,log.mmstat.com
+DOMAIN,sycm.mmstat.com
+# > Tencent
+DOMAIN,fairplay.l.qq.com
+DOMAIN,livew.l.qq.com
+DOMAIN,vd.l.qq.com
+DOMAIN,vi.l.qq.com
+DOMAIN,sdk.e.qq.com
+DOMAIN,emoji.qpic.cn
+# > misakaf emby
+DOMAIN-SUFFIX,misakaf.xyz
+IP-CIDR,154.208.10.63/32,no-resolve
+# > Umeng
+DOMAIN,msg.umeng.com
+DOMAIN,msg.umengcloud.com
+# > other
+DOMAIN,www.91chaoqing.com
+DOMAIN-SUFFIX,chaizi.cc
+DOMAIN-SUFFIX,isha.ren
+
 
 # > Tencent
 IP-CIDR,182.254.116.0/24,no-resolve
