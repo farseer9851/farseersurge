@@ -4,23 +4,12 @@ DOMAIN,bdtj.tagtic.cn
 # > Alibaba
 DOMAIN,log.mmstat.com
 DOMAIN,sycm.mmstat.com
-# > Tencent
-DOMAIN,fairplay.l.qq.com
-DOMAIN,livew.l.qq.com
-DOMAIN,vd.l.qq.com
-DOMAIN,vi.l.qq.com
-DOMAIN,sdk.e.qq.com
-DOMAIN,emoji.qpic.cn
-# > misakaf emby
-DOMAIN-SUFFIX,misakaf.xyz
-IP-CIDR,154.208.10.63/32,no-resolve
+
+
 # > Umeng
 DOMAIN,msg.umeng.com
 DOMAIN,msg.umengcloud.com
-# > other
-DOMAIN,www.91chaoqing.com
-DOMAIN-SUFFIX,chaizi.cc
-DOMAIN-SUFFIX,isha.ren
+
 
 
 # > Tencent
