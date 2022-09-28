@@ -5,15 +5,13 @@ DOMAIN-SUFFIX,4gtv.tv
 DOMAIN,4gtvfreepcvod-cds.cdn.hinet.net
 
 # >> AbemaTV
-DOMAIN,abematv.akamaized.net
-DOMAIN,ds-linear-abematv.akamaized.net
-DOMAIN,ds-vod-abematv.akamaized.net
-DOMAIN,linear-abematv.akamaized.net
-
+DOMAIN-KEYWORD,abematv.akamaized.net
 DOMAIN-SUFFIX,abema.io
 DOMAIN-SUFFIX,abema.tv
 DOMAIN-SUFFIX,ameba.jp
+DOMAIN-SUFFIX,hayabusa.dev
 DOMAIN-SUFFIX,hayabusa.io
+DOMAIN-SUFFIX,hayabusa.media
 
 USER-AGENT,AbemaTV*
 
@@ -35,15 +33,36 @@ DOMAIN-KEYWORD,avoddashs
 DOMAIN-SUFFIX,aiv-cdn.net
 DOMAIN-SUFFIX,aiv-delivery.net
 DOMAIN-SUFFIX,amazonvideo.com
+DOMAIN-SUFFIX,amazonvideo.cc
 DOMAIN-SUFFIX,media-amazon.com
 DOMAIN-SUFFIX,primevideo.com
+DOMAIN-SUFFIX,prime-video.com
+DOMAIN-SUFFIX,primevideo.cc
+DOMAIN-SUFFIX,primevideo.info
+DOMAIN-SUFFIX,primevideo.org
+DOMAIN-SUFFIX,primevideo.tv
+DOMAIN-SUFFIX,amazonvideodirect.cc
+DOMAIN-SUFFIX,amazonprimevideos.com
+
+DOMAIN,atv-ps.amazon.com
+DOMAIN,fls-na.amazon.com
 
 USER-AGENT,InstantVideo.US*
 USER-AGENT,Prime%20Video*
+
 # >> Apple TV
+
 DOMAIN,ocvideo.apple.com
+DOMAIN,linear.tv.apple.com
+DOMAIN,play-edge.itunes.apple.com
+DOMAIN,uts-api.itunes.apple.com
+
+# >> Apple Music TV
+DOMAIN,tv.applemusic.com
 
 # >> Bahamut
+
+DOMAIN,bahamut.akamaized.net
 DOMAIN,gamer-cds.cdn.hinet.net
 DOMAIN,gamer2-cds.cdn.hinet.net
 
@@ -53,21 +72,34 @@ DOMAIN-SUFFIX,gamer.com.tw
 USER-AGENT,Anime*
 
 # >> BBC
+
 DOMAIN-KEYWORD,bbcfmt
 DOMAIN-KEYWORD,uk-live
 
-DOMAIN-SUFFIX,bbc.co.uk,force-remote-dns
-DOMAIN-SUFFIX,bbci.co.uk,force-remote-dns
+DOMAIN-SUFFIX,bbc.co.uk
+DOMAIN-SUFFIX,bbci.co.uk
 
 USER-AGENT,BBCiPlayer*
 
+# >> Bilibili Intl
+
+DOMAIN-SUFFIX,biliintl.com
+DOMAIN,apm-misaka.biliapi.net
+DOMAIN,p.bstarstatic.com
+DOMAIN,p-bstarstatic.akamaized.net
+DOMAIN,upos-bstar-mirrorakam.akamaized.net
+DOMAIN,upos-bstar1-mirrorakam.akamaized.net
+
 # >> DAZN
+
 DOMAIN,d151l6v8er5bdm.cloudfront.net
 
 DOMAIN-KEYWORD,voddazn
 
 DOMAIN-SUFFIX,dazn-api.com
 DOMAIN-SUFFIX,dazn.com
+DOMAIN-SUFFIX,dazndn.com
+DOMAIN-SUFFIX,indazn.com
 
 USER-AGENT,DAZN*
 
@@ -76,17 +108,35 @@ DOMAIN-SUFFIX,deezer.com
 DOMAIN-SUFFIX,dzcdn.net
 USER-AGENT,Deezer*
 
-# > Disney+
+# >> Disney+
 DOMAIN,cdn.registerdisney.go.com
 
 DOMAIN-SUFFIX,bamgrid.com
 DOMAIN-SUFFIX,disney-plus.net
 DOMAIN-SUFFIX,disneyplus.com
 DOMAIN-SUFFIX,dssott.com
+DOMAIN-SUFFIX,disneystreaming.com
 
 USER-AGENT,Disney+*
 
+# >> Discovery+
+
+USER-AGENT,DPlus*
+USER-AGENT,discovery+*
+DOMAIN-SUFFIX,disco-api.com
+DOMAIN-SUFFIX,discoveryplus.co.uk
+DOMAIN-SUFFIX,discoveryplus.com
+DOMAIN-SUFFIX,discoveryplus.in
+DOMAIN-SUFFIX,dnitv.com
+
+# >> DMM
+
+DOMAIN-SUFFIX,dmm.co.jp
+DOMAIN-SUFFIX,dmm.com
+DOMAIN-SUFFIX,dmm-extension.com
+
 # >> encoreTVB
+
 DOMAIN,bcbolt446c5271-a.akamaihd.net
 DOMAIN,content.jwplatform.com
 DOMAIN,edge.api.brightcove.com
@@ -96,7 +146,11 @@ DOMAIN-SUFFIX,encoretvb.com
 
 USER-AGENT,encoreTVB*
 
+USER-AGENT,TVer-Release*
+DOMAIN-SUFFIX,tver.jp
+
 # >> Fox Now
+
 DOMAIN-SUFFIX,fox.com
 DOMAIN-SUFFIX,foxdcg.com
 DOMAIN-SUFFIX,uplynk.com
@@ -104,6 +158,7 @@ DOMAIN-SUFFIX,uplynk.com
 USER-AGENT,FOX%20NOW*
 
 # >> Fox+
+
 DOMAIN,dashasiafox.akamaized.netflix
 DOMAIN,staticasiafox.akamaized.net
 
@@ -113,6 +168,26 @@ DOMAIN-SUFFIX,theplatform.com
 USER-AGENT,FOXPlus*
 
 # >> HBO
+
+# >> HBO GO & NOW & Max
+
+DOMAIN-SUFFIX,hbo.com
+DOMAIN-SUFFIX,hbogo.com
+DOMAIN-SUFFIX,hbonow.com
+
+USER-AGENT,HBO%20NOW*
+USER-AGENT,HBOMAX*
+
+DOMAIN-SUFFIX,hbomax.com
+DOMAIN-SUFFIX,hbomaxcdn.com
+
+# >> HBO Asia
+
+DOMAIN-SUFFIX,hboasia.com
+DOMAIN-SUFFIX,hbogoasia.com
+DOMAIN-SUFFIX,hbogoasia.hk
+DOMAIN-KEYWORD,.hbogoasia.
+
 DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
 DOMAIN,bcbolthboa-a.akamaihd.net
 DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net
@@ -122,31 +197,31 @@ DOMAIN,hboasia2-i.akamaihd.net
 DOMAIN,hboasia3-i.akamaihd.net
 DOMAIN,hboasia4-i.akamaihd.net
 DOMAIN,hboasia5-i.akamaihd.net
+DOMAIN,hbogoprod-vod.akamaized.net
 DOMAIN,manifest.prod.boltdns.net
 DOMAIN,players.brightcove.net
 DOMAIN,s3-ap-southeast-1.amazonaws.com
-
-DOMAIN-SUFFIX,hbo.com
-DOMAIN-SUFFIX,hboasia.com
-DOMAIN-SUFFIX,hbogo.com
-DOMAIN-SUFFIX,hbogoasia.com
-DOMAIN-SUFFIX,hbogoasia.hk
-DOMAIN-SUFFIX,hbonow.com
+DOMAIN,hboasialive.akamaized.net
+DOMAIN,hbounify-prod.evergent.com
+DOMAIN,hbolb.onwardsmg.com
 
 USER-AGENT,HBO%20GO%20PROD%20HKG*
-USER-AGENT,HBO%20NOW*
+
 USER-AGENT,HBO*
 
 # >> Hulu
+
 DOMAIN-SUFFIX,happyon.jp
 DOMAIN-SUFFIX,hulu.com
 DOMAIN-SUFFIX,hulu.jp
 DOMAIN-SUFFIX,huluim.com
 DOMAIN-SUFFIX,hulustream.com
+DOMAIN-SUFFIX,hjholdings.jp
 
 USER-AGENT,Hulu*
 
 # >> HWTV
+
 USER-AGENT,HWTVMobile*
 DOMAIN-SUFFIX,5itv.tv
 DOMAIN-SUFFIX,ocnttv.com
@@ -161,6 +236,7 @@ USER-AGENT,ITV_Player*
 
 # >> JOOX
 DOMAIN-SUFFIX,joox.com
+DOMAIN-KEYWORD,jooxweb-api
 
 USER-AGENT,JOOX*
 USER-AGENT,WeMusic*
@@ -199,41 +275,34 @@ DOMAIN-SUFFIX,my5.tv
 
 USER-AGENT,My5*
 
+# >> Naver TV
+USER-AGENT,Naver%20TV*
+DOMAIN-SUFFIX,tv.naver.com
+DOMAIN-SUFFIX,smartmediarep.com
+
 # >> myTV Super
 DOMAIN-SUFFIX,mytvsuper.com
 DOMAIN-SUFFIX,tvb.com
 
 USER-AGENT,mytv*
 
+DOMAIN-KEYWORD,nowtv100
+DOMAIN-KEYWORD,rthklive
+
 # >> Netflix
+DOMAIN-SUFFIX,netflix.ca
 DOMAIN-SUFFIX,netflix.com
 DOMAIN-SUFFIX,netflix.net
-DOMAIN-SUFFIX,netflixdnstest0.com
-DOMAIN-SUFFIX,netflixdnstest1.com
-DOMAIN-SUFFIX,netflixdnstest2.com
-DOMAIN-SUFFIX,netflixdnstest3.com
-DOMAIN-SUFFIX,netflixdnstest4.com
-DOMAIN-SUFFIX,netflixdnstest5.com
-DOMAIN-SUFFIX,netflixdnstest6.com
-DOMAIN-SUFFIX,netflixdnstest7.com
-DOMAIN-SUFFIX,netflixdnstest8.com
-DOMAIN-SUFFIX,netflixdnstest9.com
 DOMAIN-SUFFIX,nflxext.com
 DOMAIN-SUFFIX,nflximg.com
 DOMAIN-SUFFIX,nflximg.net
-DOMAIN-SUFFIX,nflxsearch.net
 DOMAIN-SUFFIX,nflxso.net
 DOMAIN-SUFFIX,nflxvideo.net
-
-IP-CIDR,23.246.0.0/18,no-resolve
-IP-CIDR,37.77.184.0/21,no-resolve
-IP-CIDR,45.57.0.0/17,no-resolve
-IP-CIDR,64.120.128.0/17,no-resolve
-IP-CIDR,66.197.128.0/17,no-resolve
-IP-CIDR,108.175.32.0/20,no-resolve
-IP-CIDR,192.173.64.0/18,no-resolve
-IP-CIDR,198.38.96.0/19,no-resolve
-IP-CIDR,198.45.48.0/20,no-resolve
+DOMAIN-SUFFIX,nflxsearch.net
+DOMAIN-KEYWORD,netflixdnstest
+DOMAIN-KEYWORD,dualstack.apiproxy-
+DOMAIN-KEYWORD,dualstack.ichnaea-web-
+DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
 
 USER-AGENT,Argo*
 
@@ -245,6 +314,30 @@ DOMAIN-SUFFIX,socdm.com
 
 USER-AGENT,Niconico*
 
+# >> Now E
+DOMAIN-SUFFIX,nowe.com
+DOMAIN-SUFFIX,nowestatic.com
+
+# >> Paramount+
+USER-AGENT,PPlus*
+DOMAIN-SUFFIX,cbsi.com
+DOMAIN-SUFFIX,cbsaavideo.com
+DOMAIN-SUFFIX,cbsivideo.com
+DOMAIN-SUFFIX,paramountplus.com
+DOMAIN-SUFFIX,pplusstatic.com
+DOMAIN,cbsi.live.ott.irdeto.com
+DOMAIN,cbsplaylistserver.aws.syncbak.com
+DOMAIN,cbsservice.aws.syncbak.com
+DOMAIN,link.theplatform.com
+
+# >> PBS
+USER-AGENT,PBS*
+DOMAIN-SUFFIX,pbs.org
+
+# >> Peacock
+USER-AGENT,PeacockMobile*
+DOMAIN-SUFFIX,peacocktv.com
+
 # >> Pandora
 DOMAIN-SUFFIX,pandora.com
 USER-AGENT,Pandora*
@@ -255,6 +348,7 @@ USER-AGENT,PBS*
 
 # >> Pornhub
 DOMAIN-SUFFIX,phncdn.com
+DOMAIN-SUFFIX,phprcdn.com
 DOMAIN-SUFFIX,pornhub.com
 DOMAIN-SUFFIX,pornhubpremium.com
 
@@ -272,10 +366,18 @@ DOMAIN-SUFFIX,pscdn.co
 DOMAIN-SUFFIX,scdn.co
 DOMAIN-SUFFIX,spoti.fi
 DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,byspotify.com
+DOMAIN-SUFFIX,spoti.fi
+DOMAIN-SUFFIX,spotify-everywhere.com
+DOMAIN-SUFFIX,spotify.design
+DOMAIN-SUFFIX,spotifycdn.com
+DOMAIN-SUFFIX,spotifycdn.net
+DOMAIN-SUFFIX,spotifycharts.com
+DOMAIN-SUFFIX,spotifycodes.com
+DOMAIN-SUFFIX,spotifyforbrands.com
+DOMAIN-SUFFIX,spotifyjobs.com
 
-IP-CIDR,35.186.224.47/32,no-resolve
-
-USER-AGENT,Spotify*
+USER-AGENT,*Spotify*
 
 # >> TaiwanGood
 DOMAIN,hamifans.emome.net
@@ -287,14 +389,16 @@ USER-AGENT,TIDAL*
 DOMAIN-SUFFIX,tidal.com
 
 # >> TikTok
-DOMAIN,api-h2.tiktokv.com
-DOMAIN,api2-19-h2.musical.ly
 
-DOMAIN-KEYWORD,-tiktokcdn-com
-
+DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,ibytedtos.com
 DOMAIN-SUFFIX,muscdn.com
 DOMAIN-SUFFIX,musical.ly
+DOMAIN-SUFFIX,tiktok.com
+DOMAIN-SUFFIX,tik-tokapi.com
 DOMAIN-SUFFIX,tiktokcdn.com
+DOMAIN-SUFFIX,tiktokv.com
+DOMAIN-KEYWORD,-tiktokcdn-com
 
 USER-AGENT,TikTok*
 
@@ -303,6 +407,7 @@ DOMAIN-SUFFIX,jtvnw.net
 DOMAIN-SUFFIX,ttvnw.net
 DOMAIN-SUFFIX,twitch.tv
 DOMAIN-SUFFIX,twitchcdn.net
+DOMAIN-SUFFIX,ext-twitch.tv
 
 # >> ViuTV
 DOMAIN,api.viu.now.com
@@ -314,18 +419,81 @@ DOMAIN-SUFFIX,viu.com
 DOMAIN-SUFFIX,viu.tv
 USER-AGENT,Viu*
 
-# >> Youtube
+# >> YouTube
 DOMAIN,youtubei.googleapis.com
 
 DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,withyoutube.com
+
+DOMAIN-SUFFIX,youtubeeducation.com
+DOMAIN-SUFFIX,youtubegaming.com
+DOMAIN-SUFFIX,youtubekids.com
+DOMAIN-SUFFIX,youtube-nocookie.com
 
 USER-AGENT,com.google.ios.youtube*
 USER-AGENT,YouTube*
+
+# >> YouTubeMusic
+USER-AGENT,com.google.ios.youtubemusic*
 USER-AGENT,YouTubeMusic*
 
 # >> SHOWTIME
 DOMAIN-SUFFIX,sho.com
 DOMAIN-SUFFIX,showtime.com
 
+# >> iQiYi Global
+DOMAIN-SUFFIX,iq.com
+DOMAIN,cache.video.iqiyi.com
+DOMAIN,cache-video.iq.com
+DOMAIN,intl.iqiyi.com
+DOMAIN,intl-rcd.iqiyi.com
+DOMAIN,intl-subscription.iqiyi.com
+DOMAIN,akmcdnoversea-tw.inter.iqiyi.com
+DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
+DOMAIN,chuangcachecdnoversea-tw.inter.iqiyi.com
+DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
+
+# > Himalaya Podcast
+USER-AGENT,Himalaya*
+DOMAIN-SUFFIX,himalaya.com
+
+# > Overcast
+USER-AGENT,Overcast*
+DOMAIN-SUFFIX,overcast.fm
+
+# > WeTV
+USER-AGENT,WeTV*
+DOMAIN-SUFFIX,wetv.vip
+DOMAIN-SUFFIX,wetvinfo.com
+
 # --- End of Stream Service Section ---
+
+
+# --- Stream Service ---
+
+# >> Netflix
+IP-CIDR,23.246.0.0/18,no-resolve
+IP-CIDR,37.77.184.0/21,no-resolve
+IP-CIDR,38.72.126.0/24,no-resolve
+IP-CIDR,45.57.0.0/17,no-resolve
+IP-CIDR,64.120.128.0/17,no-resolve
+IP-CIDR,66.197.128.0/17,no-resolve
+IP-CIDR,69.53.224.0/19,no-resolve
+IP-CIDR,103.87.204.0/22,no-resolve
+IP-CIDR,108.175.32.0/20,no-resolve
+IP-CIDR,185.2.220.0/22,no-resolve
+IP-CIDR,185.9.188.0/22,no-resolve
+IP-CIDR,192.173.64.0/18,no-resolve
+IP-CIDR,198.38.96.0/19,no-resolve
+IP-CIDR,198.45.48.0/20,no-resolve
+IP-CIDR,208.75.76.0/22,no-resolve
+IP-CIDR,34.210.42.111/32,no-resolve
+IP-CIDR,52.89.124.203/32,no-resolve
+IP-CIDR,54.148.37.5/32,no-resolve
+
+# >> Spotify
+IP-CIDR,35.186.224.47/32,no-resolve
+
+# >> WeTV
+IP-CIDR,150.109.28.51/32,no-resolve
