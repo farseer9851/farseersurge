@@ -1,0 +1,51 @@
+# Misc
+DOMAIN-SUFFIX,tw
+DOMAIN-KEYWORD,google
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,ampproject.org
+DOMAIN-KEYWORD,gmail
+DOMAIN-KEYWORD,youtube
+DOMAIN-KEYWORD,facebook
+DOMAIN-SUFFIX,fb.me
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-KEYWORD,twitter
+DOMAIN-KEYWORD,instagram
+DOMAIN-KEYWORD,dropbox
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-KEYWORD,blogspot
+DOMAIN-SUFFIX,youtu.be
+DOMAIN-SUFFIX,oculuscdn.com
+DOMAIN-SUFFIX,oculus.com
+DOMAIN-KEYWORD,whatsapp
+DOMAIN-SUFFIX,letsencrypt.org
+DOMAIN-SUFFIX,android.com
+DOMAIN-SUFFIX,ytimg.com
+
+AND,((DOMAIN-KEYWORD,wiki), (DOMAIN-SUFFIX,org))
+AND,((DOMAIN-KEYWORD,amazon), (DOMAIN-SUFFIX,com))
+AND,((DOMAIN-KEYWORD,github), (DOMAIN-SUFFIX,com))
+AND,((DOMAIN-KEYWORD,dropbox), (DOMAIN-SUFFIX,com))
+
+# Line
+DOMAIN-SUFFIX,line.me
+DOMAIN-SUFFIX,line-scdn.net
+DOMAIN-SUFFIX,line-apps.com
+
+
+
+# PayPal
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+DOMAIN-KEYWORD,paypal
+USER-AGENT,PayPal*
+
+# FINAL
+AND,((IP-CIDR,0.0.0.0/0,no-resolve), (NOT,((GEOIP,CN))))
+
+
+AND,((USER-AGENT,JSBox*), (NOT,((GEOIP,CN))))
+AND,((USER-AGENT,Reeder*), (NOT,((GEOIP,CN))))
+
+AND,((USER-AGENT,Mozilla*), (NOT,((GEOIP,CN))))
+AND,((USER-AGENT,*Safari*), (NOT,((GEOIP,CN))))
+AND,((USER-AGENT,*Networking*), (NOT,((GEOIP,CN))))
