@@ -1,11 +1,11 @@
 #!name=AdvertisingLite
-#!desc=最后更新时间 2022-11-03 17:11:53
+#!desc=最后更新时间 2022-11-28 22:31:25
 #!author=blackmatrix7
 #!repo=https://github.com/blackmatrix7/ios_rule_script
-#!reject=363
+#!reject=364
 #!mitm=299
 #!force-http-engine-hosts=6
-#!total=668
+#!total=669
 
 [General]
 force-http-engine-hosts = %APPEND% *.ott.cibntv.net,intl.iqiyi.com,maicai.api.ddxq.mobi,mobileapi-v6.elong.com,weibointl.api.weibo.cn,wmapi.meituan.com
@@ -19,6 +19,7 @@ force-http-engine-hosts = %APPEND% *.ott.cibntv.net,intl.iqiyi.com,maicai.api.dd
 "^https?://ads-img-al\.xhscdn\.com/hera/" - reject
 "^https?://cdn\.fivecdm\.com/cr/" - reject
 "^https?://img2\.autoimg\.cn/admdfs/" - reject
+"^https?://mangaapi\.manhuaren\.com/v\d/ad/" - reject
 "^https?://oss\.umetrip\.com/fs/advert/polite/" - reject
 "^https?://ssp\.dzh\.com\.cn/v2api/adgroupjson" - reject
 "^https?://venus\.yhd\.com/memhome/launchConfig" - reject
