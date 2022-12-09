@@ -1,5 +1,5 @@
 #!name=AdvertisingLite
-#!desc=最后更新时间 2022-12-07 22:40:28
+#!desc=最后更新时间 2022-12-09 02:12:00
 #!author=blackmatrix7
 #!repo=https://github.com/blackmatrix7/ios_rule_script
 #!reject=363
@@ -14,7 +14,6 @@ force-http-engine-hosts = %APPEND% *.ott.cibntv.net,intl.iqiyi.com,maicai.api.dd
 
 
 [URL Rewrite]
-"^https:\/\/god\.gameyw\.netease\.com\/v1\/ad\/.*" - reject
 "^https?:\/\/(api|api-bk\d+)\.tv\.sohu\.com\/agg\/api\/app\/config\/bootstrap" - reject
 "^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/" - reject
 "^https?:\/\/(gw|heic)\.alicdn\.com\/\w{2}s\/.+\.jpg_(9\d{2}|\d{4})" - reject
@@ -85,6 +84,7 @@ force-http-engine-hosts = %APPEND% *.ott.cibntv.net,intl.iqiyi.com,maicai.api.dd
 "^https?:\/\/foodie-api\.yiruikecorp\.com\/v\d\/(banner|notice)\/overview" - reject
 "^https?:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery" - reject
 "^https?:\/\/gfp\.veta\.naver\.com\/adcall\?" - reject
+"^https?:\/\/god\.gameyw\.netease\.com\/v1\/ad\/.*" - reject
 "^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/zhuanche-passengerController\/notk\/passenger\/recommendADs" - reject
 "^https?:\/\/gw\.csdn\.net\/cms-app\/v\d+\/home_page\/open_advertisement" - reject
 "^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/banner" - reject
