@@ -1,5 +1,5 @@
 #!name=AdvertisingLite
-#!desc=最后更新时间 2023-02-18 02:13:13
+#!desc=最后更新时间 2023-02-20 02:17:54
 #!author=blackmatrix7
 #!repo=https://github.com/blackmatrix7/ios_rule_script
 #!reject=496
@@ -250,7 +250,7 @@ force-http-engine-hosts = %APPEND% *.ott.cibntv.net,intl.iqiyi.com,maicai.api.dd
 "^https?:\/\/webboot\.zhangyue\.com\/zyapi\/bookstore\/ad\/" - reject
 "^https?:\/\/webboot\.zhangyue\.com\/zycl\/api\/ad\/" - reject
 "^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php.*ads&c=ad.*" - reject
-"^https?:\/\/wmapi\.meituan\.com\/api\/v\d+\/loadInfo?" - reject
+"^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/(openscreen\?ad|loadInfo\?|startpicture)" - reject
 "^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/startpicture" - reject
 "^https?:\/\/www1\.elecfans\.com\/www\/delivery\/" - reject
 "^https?:\/\/www\.dililitv\.com\/wp-author\/tga\/.*ad=.*" - reject
