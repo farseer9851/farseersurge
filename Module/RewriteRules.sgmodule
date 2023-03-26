@@ -1,11 +1,11 @@
 #!name=AdvertisingLite
-#!desc=最后更新时间 2023-03-21 02:24:06
+#!desc=最后更新时间 2023-03-26 02:16:57
 #!author=blackmatrix7
 #!repo=https://github.com/blackmatrix7/ios_rule_script
-#!reject=504
+#!reject=502
 #!mitm=415
 #!force-http-engine-hosts=6
-#!total=925
+#!total=923
 
 [General]
 force-http-engine-hosts = %APPEND% *.ott.cibntv.net,intl.iqiyi.com,maicai.api.ddxq.mobi,mobileapi-v6.elong.com,weibointl.api.weibo.cn,wmapi.meituan.com
@@ -180,7 +180,6 @@ force-http-engine-hosts = %APPEND% *.ott.cibntv.net,intl.iqiyi.com,maicai.api.dd
 "^https?:\/\/m\.caijing\.com\.cn\/startup_ad_ios\.html$" - reject
 "^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getHomePageAd|getWelcomeAd)" - reject
 "^https?:\/\/m\.creditcard\.ecitic\.com\/citiccard\/mbk\/appspace-getway\/getWay\/dkkj-system-web\/system\/v\d\/init-config" - reject
-"^https?:\/\/m\.ctrip\.com\/html5\/webresource\/js\/iscroll\.js$" - reject
 "^https?:\/\/m\.ctrip\.com\/restapi\/[\w\/]+tripAds" - reject
 "^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/\d+\/json\/getAdsList" - reject
 "^https?:\/\/m\.yhdm\.io\/bar\/yfgg.js" - reject
@@ -188,7 +187,6 @@ force-http-engine-hosts = %APPEND% *.ott.cibntv.net,intl.iqiyi.com,maicai.api.dd
 "^https?:\/\/ma-adx\.ctrip\.com\/_ma\.gif" - reject
 "^https?:\/\/mage\.if\.qidian\.com\/argus\/api\/v\d\/client\/getsplashscreen" - reject
 "^https?:\/\/maicai\.api\.ddxq\.mobi\/advert\/" - reject
-"^https?:\/\/mangaapi\.manhuaren\.com\/v\d\/ad\/" - reject
 "^https?:\/\/mapi\.appvipshop\.com\/vips-mobile\/rest\/activity\/advertisement\/get" - reject
 "^https?:\/\/mapi\.appvipshop\.com\/vips-mobile\/rest\/iosAdInfo\/report" - reject
 "^https?:\/\/mapi\.mafengwo\.cn\/ad\/get_launch_ad_list\/v2" - reject
