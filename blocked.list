@@ -206,12 +206,9 @@ DOMAIN-KEYWORD,paypal
 USER-AGENT,PayPal*
 
 # FINAL
-AND,((IP-CIDR,0.0.0.0/0,no-resolve), (NOT,((GEOIP,CN))))
-
-
-AND,((USER-AGENT,JSBox*), (NOT,((GEOIP,CN))))
-AND,((USER-AGENT,Reeder*), (NOT,((GEOIP,CN))))
-
-AND,((USER-AGENT,Mozilla*), (NOT,((GEOIP,CN))))
-AND,((USER-AGENT,*Safari*), (NOT,((GEOIP,CN))))
-AND,((USER-AGENT,*Networking*), (NOT,((GEOIP,CN))))
+# AND,((IP-CIDR,0.0.0.0/0,no-resolve), (NOT,((GEOIP,CN))))
+# AND,((USER-AGENT,JSBox*), (NOT,((GEOIP,CN))))
+# AND,((USER-AGENT,Reeder*), (NOT,((GEOIP,CN))))
+# AND,((USER-AGENT,Mozilla*), (NOT,((GEOIP,CN))))
+# AND,((USER-AGENT,*Safari*), (NOT,((GEOIP,CN))))
+# AND,((USER-AGENT,*Networking*), (NOT,((GEOIP,CN))))
