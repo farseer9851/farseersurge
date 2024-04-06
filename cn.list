@@ -346,11 +346,6 @@ DOMAIN-SUFFIX,qhres2.com
 DOMAIN-SUFFIX,so.com
 DOMAIN-SUFFIX,yunpan.cn
 
-
-
 # > Tencent
 IP-CIDR,182.254.116.0/24,no-resolve
 IP-CIDR,1.255.62.0/24,no-resolve
-
-# Lan AND,((IP-CIDR,0.0.0.0/0,no-resolve), (RULE-SET,LAN))
-
